@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hei, {{ user.user_name }},
+
+Käyttäjätilisi on luotu onnistuneesti. Klikkaa alla olevaa linkkiä aktivoivaksesi tilisi.
+
+http://{{ domain }}{% url 'account:activate' uidb64=uid token=token %}
+{% endautoescape %}

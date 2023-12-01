@@ -1,0 +1,36 @@
+@media (min-width: 1000px){
+    .container{
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 80%;
+        padding:240px;
+    }
+}
+@media (min-width: 1000px){
+    .container-fluid{
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1200px){
+    .container-fluid{
+        max-width: 80%;
+        padding:240px;
+    }
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu{
+    top:58px;
+    left:0px;
+}
+
+.alert-primary{
+    background-color: #E4F1FF;
+}
+.piilota{
+    display: block;
+}

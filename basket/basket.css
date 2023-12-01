@@ -1,0 +1,38 @@
+.basket-qty{
+    color: #fff;
+    background: #d42114;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-sizing: content-box;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 28px;
+    left: 20px;
+}
+.basket-qty.basket-qty{
+    position: relative;
+    left: 55px;
+    align-items: left;
+}
+
+.basket-btn{
+    position: relative;
+}
+
+.basket-btn:hover, .basket-btn:focus, .basket-btn:active, .basket-btn.active{
+    color:#d42114;
+    transition-duration: 0.4s;
+    background-color: #fff;
+}
+
+.pad {
+    padding-left: 20px;
+    padding-right: 20px;
+}

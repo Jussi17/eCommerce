@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}FAQs{% endblock %}
+{% block content %}
+
+<head>
+    <title>FAQs</title>
+    <style>
+      .question {
+        font-weight: bold;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      
+      .answer {
+        margin-left: 20px;
+        font-weight: 100;
+        display: none;
+        margin-bottom: 10px;
+      }
+    </style>
+    <body>
+        <div class="container-fluid">
+          <br><br>
+          <h1>Usein kysyttyä</h1>
+          <ul>
+            <li>
+              <div class="question" onclick="toggleAnswer(this)">Ovatko tuotteet laadukkaita?</div>
+              <div class="answer">Kyllä ovat. Jokainen tuote on huolella tehty yksityiskohtaisesti käyttäen Paint 3D- ohjelmistoa.</div>
+            </li>
+            <li>
+              <div class="question" onclick="toggleAnswer(this)">Onko teillä myymälää?</div>
+              <div class="answer">Toistaiseksi toimimme vain nettikauppana.</div>
+            </li>
+            <li>
+                <div class="question" onclick="toggleAnswer(this)">Mitä toimitustapoja teillä on?</div>
+                <div class="answer">Vaihtoehtoina on pikatoimitus ja normaalitoimitus.</div>
+              </li>
+            
+              <li>
+                <div class="question" onclick="toggleAnswer(this)">Miten olette tehneet nettikauppanne?</div>
+                <div class="answer">Sivut on tehty Djangolla, käyttäen Pyhtonia, HTML, CSS ja JavaScript koodikieliä.</div>
+              </li>
+            
+              <li>
+                <div class="question" onclick="toggleAnswer(this)">Onko tämä nettikauppa oikeasti olemassa?</div>
+                <div class="answer">Ei missään tapauksessa! Toivottavasti olet jo sen tähän mennessä ymmärtänyt.</div>
+              </li>
+            </ul>
+        </div>
+        <script>
+          function toggleAnswer(question) {
+            // Find the answer element associated with the question
+            var answer = question.nextElementSibling;
+      
+            // Toggle the display of the answer element
+            if (answer.style.display === "none") {
+              answer.style.display = "block";
+            } else {
+              answer.style.display = "none";
+            }
+          }
+        </script>
+      </body>
+ 
+{% endblock %}
